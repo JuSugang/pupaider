@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Postch.create(title: "Beaches5", image: "http://s3.amazonaws",content: "wish good")
+Postsg.create(title: "Beaches4", image: "http://s3.amazonaws",content: "wish good")
+

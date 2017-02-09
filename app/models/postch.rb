@@ -1,0 +1,2 @@
+class Postch < ApplicationRecord
+end

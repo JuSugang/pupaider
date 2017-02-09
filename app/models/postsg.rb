@@ -1,0 +1,2 @@
+class Postsg < ApplicationRecord
+end
