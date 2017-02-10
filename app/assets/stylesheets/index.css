@@ -15,16 +15,17 @@ html, body {
   padding: 10px 20px 20px 0px;
   background-color:#fff;
 }
-
-.w3-navbar li {
-  float:right!important;
-  display: inline;
+.w3-container ul {
+	margin-top: 20px;
 }
-#icon{
-  
-  padding:-20px 0 0 0;
-  float:left;
-  display:inline;
+.w3-navbar li {
+	margin-top:15px;  
+	float:right!important;
+	display: inline;
+}
+
+#icon{ 
+  margin:0;
 }
 .w3-navbar a {
   color: #9e8d83;
@@ -35,9 +36,11 @@ html, body {
   margin-right: 10px; 
 }
 .jumbotrons{ 
-  background:url(http://postfiles11.naver.net/MjAxNzAyMDlfMTkz/MDAxNDg2NjQ3NDE4NDgw.K_XUMJK6R8A6EO94rsLTGxl8bNt-yGzGw3xfRfuIptQg.SapMbzqhW0ufuTKhhYWleRTjzlK-n5gfC-nA9nZs9Ngg.JPEG.tnrkd7679/index_bg.jpg?type=w580);
-  background-size:cover;
-  height: 800px;
+  background-image:url("https://lh6.googleusercontent.com/dBoWOF5zqEQ-X4Va77XXSdSEZlnEQa_KFEOk9qxeI5S0VfQ_N5erlTG-nZ34pGUf-EY51SYxbCzO5YA=w1920-h917-rw");
+  
+background-size:cover;
+  height: 730px;
+	background-position:center;
 }
 .main {
 
