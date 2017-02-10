@@ -1,7 +1,25 @@
-it is sugang's page
-<%@posts.each do |post|%>
-	<h1>title:<%=post.title%></hi>	
-	<h1>image:<%=post.image%></hi>	
-	<h1>content:<%=post.content%></hi>
-<%end%>	
-<a href="/index">go back</a>
+<div class="title">
+    <div class="container">
+		<div class="title_topspace"></div>
+        <div class="title_content">
+			<p>01</p>
+			<h1>SUGANG</h1>
+			<h2>Crafter + Programmer</h2>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+
+<div class="posts">
+	<div class="container">
+		<div class="row">
+			<%@posts.each do |post|%>
+				<div class="col-sm-3" style="background-color:lavender;">
+					<h1>title:<%=post.title%></hi>	
+					<h1>image:<%=post.image%></hi>	
+					<h1>content:<%=post.content%></hi>
+				</div>
+			<%end%>
+		</div>
+	</div>
+</div>

@@ -8,4 +8,5 @@
 
 Postch.create(title: "Beaches5", image: "http://s3.amazonaws",content: "wish good")
 Postsg.create(title: "Beaches4", image: "http://s3.amazonaws",content: "wish good")
+Postsg.create(title: "Beaches4", image: "http://s3.amazonaws",content: "wish good")
 

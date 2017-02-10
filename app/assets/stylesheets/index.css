@@ -3,25 +3,25 @@ html, body {
   padding: 0;
 }
 
-.container {  
+.containers {
   
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0 0; 
 }
 
 .w3-navbar {
- 
+
   margin: 0;
   padding: 10px 20px 20px 0px;
-  background-color:#fff;/*배경 흰색*/
+  background-color:#fff;
 }
 
 .w3-navbar li {
-  float:right;  
+  float:right!important;
   display: inline;
 }
 #icon{
- 
+  
   padding:-20px 0 0 0;
   float:left;
   display:inline;
@@ -31,11 +31,11 @@ html, body {
   font-family: 'Raleway', sans-serif; 
   font-weight: 600; 
   font-size: 18px;  
-  text-decoration: none; 
-  margin-right: 10px;
+  text-decoration: none;  
+  margin-right: 10px; 
 }
-.jumbotron {  
-  background:url(https://lh4.googleusercontent.com/9DZsgB3MKry0qId4Hl6tMKkiyfnvY_lmlamcmFSHXcR-KoJ_-fjh96EHTIim22eNu7z-BxX8DAZ3pcY=w1920-h974-rw);/*저희 배경이미지.*/
+.jumbotrons{ 
+  background:url(http://postfiles11.naver.net/MjAxNzAyMDlfMTkz/MDAxNDg2NjQ3NDE4NDgw.K_XUMJK6R8A6EO94rsLTGxl8bNt-yGzGw3xfRfuIptQg.SapMbzqhW0ufuTKhhYWleRTjzlK-n5gfC-nA9nZs9Ngg.JPEG.tnrkd7679/index_bg.jpg?type=w580);
   background-size:cover;
   height: 800px;
 }
@@ -46,14 +46,14 @@ html, body {
   text-align: center;
 }
 
-.main h1 { 
+.main h1 {
   color: #928d82;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 35px;
   margin-top: 0;
   margin-bottom: 50px;
-  text-transform: uppercase; 
+  text-transform: uppercase;  
 }
 .main h4 { 
   color: #928d82;
@@ -63,6 +63,7 @@ html, body {
   margin-top: 0px;
   margin-bottom: 40px;
   text-transform: uppercase;  
+}
 
 .divider{
   float:left;
@@ -100,9 +101,12 @@ html, body {
   text-align: center;
   font-size: 15px;
 }
-
-.hr {
-	
+.footer table{
+	margin: 0 auto;
 }
+.footer td{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;  
+  font-size: 15px;
 
-
+}

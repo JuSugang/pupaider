@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pupaider</title>
+    <title>pupaider</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>	</head>
+	<meta charset="utf-8"> 
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="index.css"> 
 
-  <body>
+	<body>
+	<%=render :partial => "layouts/nav"%>
     <%= yield %>
-  </body>
+	<%=render :partial => "layouts/footer"%>
+  
+
+	</body>
 </html>
