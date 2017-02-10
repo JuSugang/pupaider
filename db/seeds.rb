@@ -6,7 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Postch.create(title: "Beaches5", image: "http://s3.amazonaws",content: "wish good")
-Postsg.create(title: "Beaches4", image: "http://s3.amazonaws",content: "wish good")
-Postsg.create(title: "Beaches4", image: "http://s3.amazonaws",content: "wish good")
-
+Postch.create(title: "Ferris wheel", image: "post_image1",content: "wish good")
+Postsg.create(title: "Ferris wheel", image: "post_image1",content: "wish good")
+Postsg.create(title: "Guitar", image: "post_image2",content: "wish good")
+Postsg.create(title: "Wallet", image: "post_image3",content: "wish good")
+Postsg.create(title: "Pokemon", image: "post_image4",content: "wish good")
+Postsg.create(title: "1up", image: "post_image5",content: "wish good")
+Postsg.create(title: "Love", image: "post_image6",content: "wish good")
+Postsg.create(title: "Lapras", image: "post_image7",content: "wish good")
+Postsg.create(title: "Carriage", image: "post_image8",content: "wish good")
