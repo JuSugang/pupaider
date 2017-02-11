@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 	get '/page/changhyun'=>'page#changhyun'
 	get '/page/sugang'=>'page#sugang'
 	get '/page/aboutus'=>'page#aboutus'
+
 	get '/page/contact'=>'page#contact'
+	post '/page/email_send' => 'page#email_send'
+
 	resources :signups
 end
