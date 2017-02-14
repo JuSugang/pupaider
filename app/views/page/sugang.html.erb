@@ -16,9 +16,40 @@
 			<%@posts.each do |post|%>
 				<div class="col-sm-4">
 					<h4><%=post.title%></h4>	
-					<img src="../assets/<%=post.image%>">	
+					<img src="../assets/<%=post.image%>" style="cursor:pointer" onclick="openModal();showModal(<%=post.id%>-1)" class="w3-hover-shadow">	
 				</div>
 			<%end%>
 		</div>
+		<div id="modal01" class="w3-modal">
+			<span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-display-topright" onclick="closeModal()" style="cursor:pointer; position:fixed; margin:10px 40px 0 0;">&times;</span>
+			
+			<div class="w3-modal-content w3-animate-top">
+				<%@posts.each do |post|%>
+					<img src="../assets/<%=post.image%>" style="width:100%" class="mymodal">
+				<%end%>
+			</div>
+		</div>
 	</div>
 </div>
+
+
+<script>
+function showModal(n){
+	var i;
+	var x=document.getElementsByClassName("mymodal");
+	
+	for(i=0;i<x.length;i++){
+		x[i].style.display="none";
+	}	
+	x[n].style.display="block";
+}	
+
+
+function openModal(){
+		
+	document.getElementById('modal01').style.display="block";
+}
+function closeModal() {
+  document.getElementById('modal01').style.display = "none";
+}
+</script>

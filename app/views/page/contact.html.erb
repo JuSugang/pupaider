@@ -1,7 +1,40 @@
-<h1>Email Form</h1>
-<form action="/page/email_send" method="post">
-  Email: <input type="text" name="email"><br>
-  Title: <input type="text" name="title"><br>
-  Content: <textarea cols="40" rows="5" name="content"></textarea>  
-  <input type="submit" value="send">
-</form>
+<div class="title">
+    <div class="container">
+		<div class="title_topspace"></div>
+        <div class="title_content">
+			<h4>04</h4>
+			<h1>Contact us</h1>
+			<h4>we always love your feedback</h4>
+		</div>
+	</div>
+</div>  
+<br>
+<br>
+<div class="w3-card-4 cardform">
+	<div class="w3-container cardhead">
+		<h1>Email us if you have any question!</h1>
+	</div>
+	<form class="w3-container" action="/page/email_send" method="post">
+		<br>    
+		<h4>      
+	    <label class="w3-label w3-text-brown"><b>Your email</b></label>
+	    <input class="w3-input w3-border w3-sand" name="email" type="text">
+		</h4>
+	    <h4>      
+	    <label class="w3-label w3-text-brown"><b>Title</b></label>
+	    <input class="w3-input w3-border w3-sand" name="title" type="text">
+		</h4>
+	    <h4>
+	    <label class="w3-label w3-text-brown"><b>Content</b></label>
+		</h4>
+		<h4>
+		<textarea class="w3-border w3-sand" style="width:100%"rows="10" name="content"></textarea>
+		</h4>
+		<h4>
+	    <button class="w3-btn w3-brown">Send us</button>
+		</h4>
+	</form>
+</div>
+<br>
+<br>
+
