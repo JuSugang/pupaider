@@ -36,3 +36,25 @@
   text-transform: uppercase;
 	text-align:center;  
 }
+.mymodalContent{
+  background-color:  #cac4b6;
+  color #777777;
+  font-family: 'Nanum Gothic';  
+  font-weight: 300;
+  font-size: 20px;
+  padding-top: 40px;
+  text-align:center;
+  line-height:1.4;
+  margin:0;  
+}
+.mymodalTitle{
+
+  background-color:  #cac4b6;
+  color: #928d82;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  padding-top: 20px;
+  text-align:center; 
+  margin:0; 
+}

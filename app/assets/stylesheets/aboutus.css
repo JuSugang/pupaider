@@ -1,0 +1,25 @@
+.name td{
+	padding: 6px 0 6px 0;
+	color: #9e8d83;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.stat td{
+	padding: 2px 0 2px 0;
+	color: #9e8d83;
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	vertical-align: middle;
+}
+
+.des{
+	padding: 8px 0 8px 0;
+	font-size: 16px;
+	padding-left: 27%;
+  font-family: 'Nanum Gothic';  
+
+}
+
+

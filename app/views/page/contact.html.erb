@@ -3,7 +3,7 @@
 		<div class="title_topspace"></div>
         <div class="title_content">
 			<h4>04</h4>
-			<h1>Contact us</h1>
+			<h1>Contact</h1>
 			<h4>we always love your feedback</h4>
 		</div>
 	</div>
@@ -28,13 +28,21 @@
 	    <label class="w3-label w3-text-brown"><b>Content</b></label>
 		</h4>
 		<h4>
-		<textarea class="w3-border w3-sand" style="width:100%"rows="10" name="content"></textarea>
+		<textarea class="w3-border w3-sand" style="width:100%"rows="20" name="content"></textarea>
 		</h4>
 		<h4>
-	    <button class="w3-btn w3-brown">Send us</button>
+	    <button onclick="showSnackbar()" class="w3-btn w3-brown">Send us</button>
 		</h4>
-	</form>
+		</form>
 </div>
 <br>
 <br>
+<div id="snackbar">Please hold on a second!</div>
+
+
+<script>function showSnackbar() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+}</script>
 

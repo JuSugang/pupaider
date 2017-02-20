@@ -1,7 +1,73 @@
-it is changhyun's page
-<%@posts.each do |post|%>
-	<h1>title:<%=post.title%></hi>	
-	<h1>image:<%=post.image%></hi>	
-	<h1>content:<%=post.content%></hi>
-<%end%>	
-<a href="/index">go back</a>
+<div class="title">
+    <div class="container">
+		<div class="title_topspace"></div>
+        <div class="title_content">
+			<h4>02</h4>
+			<h1>CHANGHYUN</h1>
+			<h4>GRAPHIC DESIGNER + PROGRAMMER</h4>
+		</div>
+	</div>
+</div>  
+<div class="clearfix"></div>
+
+<div class="posts">
+	<div class="container">
+		<div class="row">
+			<%@posts.each do |post|%>
+				<div class="col-sm-4">
+					<h4><%=post.title%></h4>	
+					<img src="../assets/<%=post.image%>" style="cursor:pointer" onclick="openModal();showModal(<%=post.id%>-1)" class="w3-hover-shadow">	
+				</div>
+			<%end%>
+		</div>
+		<div id="modal01" class="w3-modal">
+			<span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-display-topright" onclick="closeModal()" style="cursor:pointer; position:fixed; margin:10px 40px 0 0;">&times;</span>
+			
+			<div class="w3-modal-content w3-animate-top">
+				<%@posts.each do |post|%>
+					<img src="../assets/<%=post.image%>" style="width:100%" class="mymodal">
+					<h1 class="mymodalTitle">
+						<%=post.title%>
+					</h1>
+					<h4 class="mymodalContent">
+						<%@content=post.content.split("\n")%>
+						
+						<%@content.each do |con|%>
+							<%=con%>
+							<br>
+						<%end%>
+						<br>
+						<br>
+					</h4>
+				<%end%>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+function showModal(n){
+	var i;
+	var x=document.getElementsByClassName("mymodal");	
+	var y=document.getElementsByClassName("mymodalContent");
+	var z=document.getElementsByClassName("mymodalTitle");	
+	for(i=0;i<x.length;i++){
+		x[i].style.display="none";
+		y[i].style.display="none";
+		z[i].style.display="none";
+	}	
+	x[n].style.display="block";
+	y[n].style.display="block";
+	z[n].style.display="block";
+}	
+
+
+function openModal(){
+		
+	document.getElementById('modal01').style.display="block";
+}
+function closeModal() {
+  document.getElementById('modal01').style.display = "none";
+}
+</script>

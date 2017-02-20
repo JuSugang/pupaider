@@ -26,6 +26,19 @@
 			<div class="w3-modal-content w3-animate-top">
 				<%@posts.each do |post|%>
 					<img src="../assets/<%=post.image%>" style="width:100%" class="mymodal">
+					<h1 class="mymodalTitle">
+						<%=post.title%>
+					</h1>
+					<h4 class="mymodalContent">
+						<%@content=post.content.split("\n")%>
+						
+						<%@content.each do |con|%>
+							<%=con%>
+							<br>
+						<%end%>
+						<br>
+						<br>
+					</h4>
 				<%end%>
 			</div>
 		</div>
@@ -36,12 +49,17 @@
 <script>
 function showModal(n){
 	var i;
-	var x=document.getElementsByClassName("mymodal");
-	
+	var x=document.getElementsByClassName("mymodal");	
+	var y=document.getElementsByClassName("mymodalContent");
+	var z=document.getElementsByClassName("mymodalTitle");	
 	for(i=0;i<x.length;i++){
 		x[i].style.display="none";
+		y[i].style.display="none";
+		z[i].style.display="none";
 	}	
 	x[n].style.display="block";
+	y[n].style.display="block";
+	z[n].style.display="block";
 }	
 
 
